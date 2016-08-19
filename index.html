@@ -19,12 +19,12 @@
                     <input class="btn-submit" type="submit" value="Submit"></input>
                 </div>
                 <div class="error" ng-show="vm.imgSearch">
-                    <label> Searching Instagram for photos tagged with {{vm.hashTag}}</label>
+                    <label> Searching Instagram for photos tagged with "{{vm.hashTag}}"</label>
                 </div>
             </div>
         </form>
         <div class="error">
-        <label ng-if="vm.imageLength > 0">We found {{vm.imageLength}} results for {{vm.hashTag}}</label> 
+        <label ng-if="vm.imageLength > 0">We found <u>{{vm.imageLength}}</u> results for "{{vm.hashTag}}"</label> 
         </div>
         <div ng-repeat="flickrImage in vm.images" class="imgDisplay">
             <img ng-src="https://farm{{flickrImage.farm}}.staticflickr.com/{{flickrImage.server}}/{{flickrImage.id}}_{{flickrImage.secret}}_m.jpg"></img>
