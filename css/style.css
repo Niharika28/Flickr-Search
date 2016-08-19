@@ -7,7 +7,7 @@ height: 1000px;
 } */
 .heading{
   position:relative;
-  margin-top: 300px;
+  margin-top: 100px;
   left : 10px;
   text-align : center;
   font-size: 3em;
@@ -37,4 +37,12 @@ float: left;
 margin: 10px;
 width: 300px;
 height: 300px;
+}
+.error {
+  position:relative;
+  margin-top: 50px;
+  right : 50px;
+  text-align : center;
+/*   padding: 10px; */
+  color: blue;
 }
